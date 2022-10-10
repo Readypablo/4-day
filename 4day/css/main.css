@@ -24,6 +24,7 @@ header{
   padding-left: 2vw;
   padding-right:2vw;
   display: flex;
+  background: #EBEBEB;
   vertical-align:middle;
 border-bottom:1px solid black;
 
@@ -35,11 +36,15 @@ justify-content: center;
 {
 display: flex;
 flex-direction: column;
-width: 94%;
-cursor: none;
+width: 100%;
+position: absolute;
+z-index: 1;
 height:auto;
-margin-right: auto;
-margin-left: auto;
+
+  background: #FBFBFB;
+top:57vh;
+
+
 }
 
 #logo-foto{
@@ -83,16 +88,62 @@ padding-top: 1vh;
   color: white;
 }
 
+
+#mark-foto-back{
+  
+
+z-index: -10;
+position: fixed;
+opacity: 1;
+
+}
+
+.vvod-info{
+
+  font-size: 20px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 800px){
   #menu-header-logo{
     display: none;
   }
    header{
-    font-size: 3vw;
+    font-size: calc(1vw + 1vh);
   }
   #header-menu-name{
         padding-left: 12vw;
   }
+
+#mark-foto-back{
+  height: 40%;
+}
+
+.main-content{
+top:36vh;
+}
+.vvod-info{
+  font-size: 10px;
+}
+
 }
 
 
@@ -106,3 +157,16 @@ padding-top: 1vh;
 }
 
 @media screen and (max-width: 800px){
+
+
+
+
+
+
+
+
+
+
+
+
+
