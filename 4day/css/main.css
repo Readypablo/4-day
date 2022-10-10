@@ -24,7 +24,7 @@ header{
   padding-left: 2vw;
   padding-right:2vw;
   display: flex;
-  background: #EBEBEB;
+  background: white;
   vertical-align:middle;
 border-bottom:1px solid black;
 
@@ -91,7 +91,7 @@ padding-top: 1vh;
 
 #mark-foto-back{
   
-
+width: 100%;
 z-index: -10;
 position: fixed;
 opacity: 1;
@@ -103,18 +103,55 @@ opacity: 1;
   font-size: 20px;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
   text-align: center;
   justify-content: center;
 }
 
 
+.modul-karta{
+
+   justify-content: center;
+  text-align: center;
+  margin-top: 4vh;
+}
+#karta{
+  justify-content: center;
+  text-align: center;
+}
+#text-karta{
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #FD4848;
+  margin-bottom: 1vh;
+}
 
 
-
-
-
+.modul-uslug{
+  margin-top: 3vh;
+  margin-left: 8vw;
+}
+#text-uslug{
+  text-align: left;
+  font-size: 40px;
+  color: #FD4848;
+  margin-bottom: 1vh;
+}
+.spisok-number{
+   text-align: left;
+padding-left: 2vw;
+  font-size: 20px;
+  color: #FD4848;
+  margin-top: 1vh;
+}
+.spisok-number-text{
+  margin-left: 6vw;
+    text-align: left;
+    justify-content: center;
+    width: 80%;
+}
 
 
 
@@ -143,7 +180,14 @@ top:36vh;
 .vvod-info{
   font-size: 10px;
 }
+#text-karta{
+  display: none;
+}
 
+#karta{
+  width: 200px;
+  height: 200px;
+}
 }
 
 
