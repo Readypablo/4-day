@@ -2,13 +2,6 @@
 font-family: 'Arsenal-Regular';
 
 }
-:root{
---main-color:#141414;
---size-fon:calc(1vw + 1vh);
---transition: 1.25s cubic-bezier(.2,.5,0,1);
---transition-cursor:2s cubic-bezier(.05,.5,0,1);
-
-
 }
 @font-face{
 font-family: 'Arsenal-Regular';
@@ -20,35 +13,30 @@ url('../fonts/arsenal-regular.ttf') format('truetype'), /* Safari, Android, iOS 
 url('../fonts/arsenal-regular.svg#arsenal-regular') format('svg'); /* Chrome < 4, Legacy iOS */
 
 }
+
+
+
+
+
+
 body{
+  margin: 0px;
+}
 
-  background: linear-gradient(90deg, #faf0cd, #fab397);
-margin: 0;
-font-size: 1vw;
-margin-top: 1vh;
+header{
+  position: fixed;
+  z-index: 1000;
+  background: yellow;
+  width: 100%;
+  height: 8vh;
+  padding-left: 2vw;
+  padding-right:2vw;
+  display: flex;
+  vertical-align:middle
 
 }
 
-
-.line{
-/*margin-top:7vh;*/
-border-bottom:1px solid black;
-cursor: none;
-margin-top: 5vh
-}
-
-.line2{
-/*margin-top:7vh;*/
-opacity: 0.1;
-border-bottom:3px solid black;
-cursor: none;
-margin-top: 5vh
-}
-
-
-
-
-.magic-list
+.main-content
 {
 display: flex;
 flex-direction: column;
@@ -59,164 +47,42 @@ margin-right: auto;
 margin-left: auto;
 }
 
+#logo-foto{
+  width: 140px;
+  height: 70px;
+}
 
-.silka{
+#menu-header-logo{
+  padding-bottom: 1vh;
+  padding-left: 3vw;
+  padding-right:3vw;
+  justify-content: center;
+  vertical-align:middle;
+ display: block;
+}
+#silk-header{
 text-decoration: none;
-color: black;
+color: black
 }
 
-.goals {
-  counter-reset: num;
-  list-style: none;
- margin-right: 1vw;
+.menu-header{
+padding-top: 1vh;
+
+  padding-bottom: 1vh;
+  padding-left: 3vw;
+  padding-right:3vw;
+  justify-content: center;
+  vertical-align:middle;
+  transition: 1s;
 }
 
-.goals ol {
-  list-style-type: decimal-leading-zero;
-  }
-
-.goals ol li {
-  content: counter(item) '';
-  /* Добавляем к числам скобку */
-  counter-increment: item;
+.menu-header:hover{
+  background: red ;
+  color: white;
 }
 
-h1 {
-/*margin-top: 5vh;*/
-padding-top: 10vh;
-margin: 0;
-  text-transform: uppercase;
-}
-#move{
-
-}
-
-#move:hover .move-left{
-transform: translate(-2vw,0);
-
-}
-.object{
-transition: all 0.8s ease-in-out;
-}
-
-
-.one{
-text-decoration: none;
-color: var(--main-color);
-margin: 0;
-height: 20vh;
-
-}
-
-
-
-
-
-
-
-
-.one:first-child{
- 
-}
-
-.magic-list_header{
-transition: transform var(--transition);
-transition: 1s;
-height: 2vh;
-}
-
-.one::before{
-transition: transform var(--transition);
-
-}
-.one:hover .magic-list_header,.one:hover::before{
- padding-left: -30px;
-    cursor: none;
-transition: transform var(--transition);
-transition-delay: .025s;
-will-change: transform;
-transform: translate3d(calc(var(--index) * 5), 0, 0);
-}
-.cursor{
-transition: transform var(--transition-cursor) height 1s ease;
-   position: fixed;
-    z-index: -100;
+@media screen and (max-width: 800px){
+  #menu-header-logo{
     display: none;
-    left: 0;
-    top: 0;
-    height: 500px;
-    overflow: hidden;
-    transform: translate3d(var(--move-x), var(--move-y), 0);
-transition: transform var(--transition-cursor), height 1s ease;
-will-change: transform;
-}
-.one:hover .cursor{
-display: block;
-    transform: translate(var(--move-x),var(--move-y));
-
-}
-
-.one:hover .cursor_image,#image5,#image4,#image3,#image2,#image1{
-height: 5vh;
-
-}
-
-@media screen and (max-width:700px){
-body{
-/*--move-x: 807px;
---move-y: 226px;*/
-font-size: 2vw;
-}
-}
-#image1{
-    background-image: url(../img/1.jpg);
-}
-#image2{
-    background-image: url(../img/2.jpg);
-}
-#image3{
-    background-image: url(../img/3.jpg);
-}
-#image4{
-    background-image: url(../img/4.jpg);
-}
-#image5{
-background-image: url(../img/5.jpg);
-}
-.cursor_image,#image5,#image4,#image3,#image2,#image1{
-transition: transform var(--transition-cursor);
-width: 30vw;
-height: 0;
-background-size: cover;
-animation: shrink 1s alternate;
-animation-fill-mode: both;
-
-
-
-
-
-}
-
-.one:hover .cursor_image,#image5,#image4,#image3,#image2,#image1{
-height: 200px;
-transition: scale() 0.7s ease-out;
-animation: shrink 1s alternate;
-animation-fill-mode: both;
---cursor-transform: translate3d(calc(var(--move-x) / -6), calc(var(--move-y) / -6), 0);
-transform: var(--cursor-transform) scale(1.5);
-transition: transform var(--transition-cursor);
-
-}
-.one:not(:hover) .cursor_image,#image5,#image4,#image3,#image2,#image1{
-animation: shrink 1s alternate;
-animation-fill-mode: both;
-
-}
-@keyframes shrink{
-from{
-height: 0px;
-}
-to{
-height: 200px;
-}
+  }
 }
