@@ -164,6 +164,41 @@ border-radius: 10%;
 }
 
 
+
+
+
+.text-pole{
+  height: 3vh;
+  border:3px solid #FF7171;
+  border-radius: 10px;
+  width: 15vw;
+}
+
+
+.forma-regst{
+  margin-left: 5vw;
+}
+.button-reg{
+  background: gray;
+  width: 5vw;
+  height: 2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .modul-uslug{
   margin-top: 8vh;
   margin-left: 8vw;
@@ -198,23 +233,40 @@ padding-left: 2vw;
 }
 
 
-/*
-Погода
+/*Погода*/
+#text-pogoda{
+    justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #FD4848;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
 
+#pogoda{
+  justify-content: center;}
+#ms-informer-link-800cc6f3546f92ef32ffd7fe9a2ce8d3{
+  text-decoration: none;
 
+}
+/*Погода*/
 
-
-
-*/
 
 
 /*Виды деятельности 
-
-
-
-
-
 */
+.spisok-number1{
+   text-align: left;
+padding-left: 2vw;
+  font-size: 30px;
+  color: #FD4848;
+  margin-top: 1vh;
+}
+
+/*Виды деятельности 
+*/
+
+
 
 
 footer{
@@ -298,7 +350,10 @@ display: none;
 .menu-header{
 display: none;
 }
-
+.text-pole{
+  width: 25vw;
+  height: 4vh;
+}
 }
 
 
