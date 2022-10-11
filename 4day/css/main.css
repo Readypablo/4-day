@@ -136,8 +136,7 @@ border-radius: 10%;
 
   font-size: 20px;
   padding-top: 6vh;
-  padding-bottom: 2vh;
-  padding-left: 20vw;
+    padding-left: 20vw;
   padding-right: 20vw;
   text-align: center;
   justify-content: center;
@@ -171,17 +170,38 @@ border-radius: 10%;
   height: 3vh;
   border:3px solid #FF7171;
   border-radius: 10px;
-  width: 15vw;
+  width: 20%;
 }
 
 
 .forma-regst{
-  margin-left: 5vw;
+
+  justify-content: center;
+  text-align: center;
 }
 .button-reg{
-  background: gray;
-  width: 5vw;
-  height: 2vh;
+  border: 1px solid  gray;
+  background: #E9E9E9;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+   transition: 1s
+  color: white;
+  margin-top: 2vh;
+}
+.button-reg:hover{
+  background: #FF7171;
+}
+
+
+.ssilka-but{
+  text-decoration: none;
+  color: black;
+  transition: 1s
+}
+.ssilka-but:hover{
+  color: white;
+
 }
 
 
@@ -351,7 +371,7 @@ display: none;
 display: none;
 }
 .text-pole{
-  width: 25vw;
+ width: 200PX;
   height: 4vh;
 }
 }
