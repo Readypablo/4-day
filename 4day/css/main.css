@@ -203,7 +203,10 @@ border-radius: 10%;
   color: white;
 
 }
+.modul-uslug1{
+margin-top: 8vh;
 
+}
 
 
 
@@ -292,7 +295,7 @@ padding-left: 2vw;
 footer{
   width: 100%
   margin:0;
-  margin-top: 10vh;
+  margin-top: 2vh;
   height: 20vh;
   background: #525252;
   display: flex;
@@ -321,6 +324,57 @@ flex-direction: column;
 margin-right: 3vw;
 justify-content: center;
 }
+
+
+
+
+
+
+
+
+.text-pole-pagers{
+   margin-left: 3vw;
+    text-align: left;
+    justify-content: center;
+    width: 80%;
+    padding-top: 3vh;
+    margin-bottom: 2vh;
+}
+.img-pole{
+margin-top: 2vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-otst-pagers{
+  line-height: 2;
+  margin-left: 5vw;
+}
+
+.foto-histor{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  border: 5px solid black;
+  border-radius: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -373,6 +427,9 @@ display: none;
 .text-pole{
  width: 200PX;
   height: 4vh;
+}
+.text-pole-pagers{
+  font-size: 15px;
 }
 }
 
